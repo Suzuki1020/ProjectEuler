@@ -7,20 +7,32 @@
  */
 public class MultiplesOf3And5 {
 
-    public void MultiplesOf3And5()
-    {
-    }
+	public void MultiplesOf3And5() {
+	}
 
-    /**
-     * 主な処理はここに全部書く
-     */
-    public void start()
-    {
-        System.out.println("Hello Project Euler");
-    }
+	/**
+	 * 主な処理はここに全部書く
+	 */
+	public void start() {
+		int sum = 0;
+		for (int i = 0; i < 1000; i++) {
+			if(isMultipleOf(3, i) || isMultipleOf(5, i))
+			{
+				sum += i;
+			}
+		}
+		System.out.println(sum);
+	}
 
-    public static void main(String[] args) {
-        MultiplesOf3And5 m = new MultiplesOf3And5();
-        m.start();
-    }
+	public boolean isMultipleOf(int multiple, int num) {
+		if (num % multiple == 0) {
+			return true;
+		}
+		return false;
+	}
+
+	public static void main(String[] args) {
+		MultiplesOf3And5 m = new MultiplesOf3And5();
+		m.start();
+	}
 }
