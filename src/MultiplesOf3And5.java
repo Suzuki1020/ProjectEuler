@@ -24,6 +24,12 @@ public class MultiplesOf3And5 {
 		System.out.println(sum);
 	}
 
+	/**
+	 * 第二引数で与えた値が第一引数の倍数かどうか判定する
+	 * @param multiple
+	 * @param num
+	 * @return  倍数だった場合はtrue、そうでないばあいはfalse
+	 */
 	public boolean isMultipleOf(int multiple, int num) {
 		if (num % multiple == 0) {
 			return true;
