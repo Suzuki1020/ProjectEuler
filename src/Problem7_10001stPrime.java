@@ -40,7 +40,7 @@ public class Problem7_10001stPrime {
 		int end = (int)Math.sqrt(num);
 		for (int i = 2; i <= end; i++)
 		{
-			if(isPrime(i) && num % i == 0)
+			if(num % i == 0)
 			{
 				return false;
 			}
