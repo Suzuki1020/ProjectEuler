@@ -72,4 +72,19 @@ public class MyMathUtil {
 
 		return result;
 	}
+
+	/**
+	 * 階乗の配列を返す
+	 * @param value
+	 * @return
+	 */
+	static public int[] factorialArray(int value)
+	{
+		int[] result = new int[value - 1];
+		for(int i = 2;i <= value;i++)
+		{
+			result[i - 2] = i;
+		}
+		return result;
+	}
 }
